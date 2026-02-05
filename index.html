@@ -114,8 +114,32 @@
         <p>&copy; 2024 Consultora Contable Laboral. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+        // Función mágica para incluir archivos HTML
+        function incluirHTML() {
+            const elementos = document.querySelectorAll('[data-include]');
+            elementos.forEach(el => {
+                const archivo = el.getAttribute('data-include');
+                fetch(archivo)
+                    .then(res => {
+                        if (res.ok) return res.text();
+                        throw new Error('Error al cargar el módulo');
+                    })
+                    .then(data => {
+                        el.innerHTML = data;
+                        el.removeAttribute('data-include');
+                    })
+                    .catch(err => console.error(err));
+            });
+        }
+
+        // Ejecutar la función al cargar la página
+        window.onload = incluirHTML;
+    </script>
+    
 </body>
 </html>
+
 
 
 
