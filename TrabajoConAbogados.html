@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Contables para Abogados</title>
+    <style>
+        :root {
+            --purple-dark: #4a235a;
+            --purple-medium: #5b2c6f;
+            --purple-light: #f4ecf7;
+            --text-dark: #333;
+            --accent-gold: #b7950b;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfafb;
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-container {
+            max-width: 800px;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+
+        /* Sección Superior */
+        .header-section {
+            padding: 50px 40px;
+            text-align: center;
+            background: linear-gradient(to bottom, #f9f4f9, #ffffff);
+        }
+
+        h1 {
+            color: var(--purple-dark);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .highlight-text {
+            color: var(--purple-medium);
+            font-weight: bold;
+        }
+
+        .cta-box {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--purple-dark);
+            margin-top: 30px;
+        }
+
+        /* Grilla de dos columnas */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            background-color: #ddd; /* Color de la línea divisoria */
+        }
+
+        .column {
+            background-color: white;
+            padding: 40px 30px;
+        }
+
+        h2 {
+            color: var(--purple-dark);
+            font-size: 1.5rem;
+            min-height: 60px;
+        }
+
+        .intro-column {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            font-size: 0.9rem;
+        }
+
+        li::before {
+            content: '✅';
+            margin-right: 10px;
+            font-size: 0.8rem;
+        }
+
+        .handshake {
+            margin-top: 25px;
+            font-weight: bold;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Footer / Contacto */
+        .footer-contact {
+            background-color: var(--purple-medium);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+        }
+
+        .footer-contact:hover {
+            background-color: var(--purple-dark);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <header class="header-section">
+            <h1>Trabajo con <span class="highlight-text">abogados</span><br>antes y durante juicios laborales. 💼</h1>
+            
+            <p class="subtitle">
+                Analizo <span class="highlight-text">liquidaciones</span>, calculo <span class="highlight-text">diferencias</span> <br>
+                y preparo los <span class="highlight-text">puntos periciales contables.</span>
+            </p>
+
+            <div class="cta-box">
+                👉 Llegá a la conciliación<br>
+                con <strong>números sólidos.</strong>
+            </div>
+        </header>
+
+        <div class="services-grid">
+            
+            <section class="column">
+                <h2>Antes de demandar, revisá los números</h2>
+                <p class="intro-column"><strong>Trabajo junto</strong> a abogados laborales desde la etapa previa a la demanda.</p>
+                <ul>
+                    <li>Revisión de liquidaciones salariales.</li>
+                    <li>Control de encuadre en CCT y categoría.</li>
+                    <li>Análisis de horas extras y adicionales.</li>
+                    <li>Cálculo de diferencias reales.</li>
+                    <li>Preparación de liquidación inicial.</li>
+                </ul>
+                <div class="handshake">🤝 Abogado + Contador = reclamo sólido</div>
+                <a href="tel:1162757527" class="footer-contact" style="margin-top: 30px;">
+                    📞 Contacto: 11 6275-7527
+                </a>
+            </section>
+
+            <section class="column">
+                <h2>Asistencia contable para litigios comerciales</h2>
+                <p class="intro-column">Brindo soporte técnico-contable a abogados en conflictos comerciales.</p>
+                <ul>
+                    <li>Análisis contable y patrimonial.</li>
+                    <li>Investigación de empresas demandadas.</li>
+                    <li>Identificación de socios o accionistas.</li>
+                    <li>Actividad, estructura y domicilio legal.</li>
+                    <li>Preparación de pruebas contables.</li>
+                </ul>
+                <div class="handshake">🤝 Análisis integral de la empresa</div>
+                <a href="tel:1162757527" class="footer-contact" style="margin-top: 30px;">
+                    📞 Contacto: 11 6275-7527
+                </a>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
