@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litigios Laborales y Comerciales - Apoyo Contable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #1a2a40; --accent: #6c5ce7; --bg-light: #f8f9fa; }
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: white; color: #333; }
+        
+        /* Navbar Unificado */
+        nav { background: var(--primary); padding: 0 10%; display: flex; justify-content: space-between; align-items: center; height: 70px; position: sticky; top: 0; z-index: 1000; }
+        .nav-links { display: flex; list-style: none; margin: 0; padding: 0; }
+        .nav-links li a { color: white; text-decoration: none; padding: 25px 20px; display: block; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links li a:hover, .nav-links li a.active { background: #2c3e50; color: #00d2ff; }
+        .logo { color: white; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Hero Section */
+        .hero-litigios {
+            background: #f1f2f6;
+            padding: 60px 10%;
+            text-align: center;
+            border-bottom: 5px solid var(--accent);
+        }
+        .hero-litigios h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; }
+        .badge-formula {
+            background: var(--accent);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Layout de Dos Columnas Full Screen */
+        .split-section {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .col {
+            flex: 1;
+            min-width: 350px;
+            padding: 60px 5%;
+            box-sizing: border-box;
+        }
+        .col-laboral { background: #ffffff; border-right: 1px solid #eee; }
+        .col-comercial { background: #fafafa; }
+
+        .col h3 { 
+            color: var(--primary); 
+            font-size: 1.8rem; 
+            border-bottom: 3px solid var(--accent); 
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .feature-list { list-style: none; padding: 0; }
+        .feature-list li { 
+            margin-bottom: 20px; 
+            font-size: 1.1rem; 
+            display: flex; 
+            align-items: flex-start; 
+            gap: 15px;
+        }
+        .feature-list i { color: #2ecc71; margin-top: 5px; }
+
+        /* Footer de Acción */
+        .footer-action {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 50px 10%;
+        }
+        .btn-call {
+            color: #25d366;
+            font-size: 2.2rem;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Soporte Jurídico</div>
+        <ul class="nav-links">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="servicios-contables.html">Contables</a></li>
+            <li><a href="servicios-abogados-peritajes.html">Peritajes</a></li>
+            <li><a href="servicios-abogados-litigios.html" class="active">Litigios</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-litigios">
+        <h1>Asistencia en Juicios y Litigios</h1>
+        <p>Trabajamos codo a codo con abogados antes y durante el proceso judicial.</p>
+        <div class="badge-formula">Abogado + Contador = Reclamo Imbatible</div>
+    </div>
+
+    <div class="split-section">
+        <div class="col col-laboral">
+            <h3>Ámbito Laboral</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> <div><strong>Revisión de Haberes:</strong> Verificamos si el sueldo fue liquidado según ley.</div></li>
+                <li><i class="fas fa-check-circle"></i> <div><strong>Cálculo de Diferencias:</strong> Determinamos montos reales adeudados.</div></li>
+                <li><i class="fas fa-check-circle"></i> <div><strong>Puntos Periciales:</strong> Armado estratégico para la demanda.</div></li>
+                <li><i class="fas fa-check-circle"></i> <div><strong>Conciliación:</strong> Preparación de liquidaciones para acuerdos rápidos.</div></li>
+            </ul>
+        </div>
+
+        <div class="col col-comercial">
+            <h3>Ámbito Comercial</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-search"></i> <div><strong>Análisis Patrimonial:</strong> Investigación de solvencia de la demandada.</div></li>
+                <li><i class="fas fa-search"></i> <div><strong>Investigación de Socios:</strong> Identificación de responsables y estructuras.</div></li>
+                <li><i class="fas fa-search"></i> <div><strong>Auditoría de Domicilios:</strong> Localización legal y comercial efectiva.</div></li>
+                <li><i class="fas fa-search"></i> <div><strong>Informes de Riesgo:</strong> Evaluación de viabilidad de cobro.</div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-action">
+        <h3>¿Necesita un informe técnico ahora?</h3>
+        <p>Atención prioritaria para plazos procesales urgentes.</p>
+        <a href="tel:5491162757527" class="btn-call">
+            <i class="fab fa-whatsapp"></i> 11 6275-7527
+        </a>
+        <p>Honorarios accesibles ajustados a cada etapa del proceso.</p>
+    </div>
+</body>
+</html>

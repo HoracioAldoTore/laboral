@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Contables - ARCA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #2c3e50; --accent: #3498db; }
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #fff; }
+        
+        nav { background: var(--primary); padding: 0 10%; display: flex; justify-content: space-between; align-items: center; height: 70px; position: sticky; top: 0; z-index: 1000; }
+        .nav-links { display: flex; list-style: none; margin: 0; padding: 0; }
+        .nav-links li a { color: white; text-decoration: none; padding: 25px 20px; display: block; font-size: 0.9rem; }
+        .nav-links li a:hover, .nav-links li a.active { background: #34495e; color: var(--accent); }
+        .logo { color: white; font-weight: 700; }
+
+        .section-header { padding: 80px 10% 40px; background: #f4f7f6; text-align: center; }
+        .arca-badge { background: #1a2a40; color: white; padding: 10px 30px; font-size: 2rem; font-weight: 900; display: inline-block; margin: 20px 0; border-radius: 4px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px 10%; }
+        .service-box { border-bottom: 4px solid var(--accent); padding: 25px; background: #fdfdfd; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .service-box h4 { color: var(--primary); text-transform: uppercase; margin-top: 0; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Soluciones Contables</div>
+        <ul class="nav-links">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="servicios-contables.html" class="active">Contables</a></li>
+            <li><a href="servicios-abogados-peritajes.html">Peritajes</a></li>
+            <li><a href="servicios-abogados-litigios.html">Litigios</a></li>
+        </ul>
+    </nav>
+
+    <div class="section-header">
+        <h1>Gestión Contable Integral</h1>
+        <div class="arca-badge">ARCA</div>
+        <p>Monotributo, IVA, Sueldos y Tasas Municipales.</p>
+    </div>
+
+    <div class="grid">
+        <div class="service-box">
+            <h4>Monotributo</h4>
+            <p>Alta, baja, recategorización y regularización de deudas con planes de pago.</p>
+        </div>
+        <div class="service-box">
+            <h4>Impuestos</h4>
+            <p>Liquidación de IVA, IIBB, Convenio Multilateral y Ganancias.</p>
+        </div>
+        <div class="service-box">
+            <h4>Sueldos</h4>
+            <p>Liquidación de jornales, cargas sociales y Libro de Sueldos Digital.</p>
+        </div>
+    </div>
+</body>
+</html>
