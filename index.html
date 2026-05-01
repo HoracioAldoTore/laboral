@@ -95,6 +95,15 @@
         /* Posiciones específicas */
         .float-ws { bottom: 20px; background-color: #25d366; }
         .float-mail { bottom: 90px; background-color: var(--primary); }
+		
+		.card-fondo-especial {    
+			background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+						url('Imagenes/fondo.png');
+			background-size: cover;
+			background-position: center;
+			color: #1a2a40; /* Mantenemos el color primario de tu index.html para el texto */
+			border: 1px solid rgba(0,0,0,0.1); /* Un borde sutil para definir la tarjeta */
+		}
     </style>
 </head>
 <body>
@@ -116,7 +125,7 @@
     </header>
 
 	<div class="container">
-		 <div class="card">
+		 <div class="card card-fondo-especial">
 			<h3><i class="fas fa-balance-scale"></i> 
 				¿Tus demandas pierden fuerza por errores en los cálculos?
 			</h3>
@@ -131,15 +140,11 @@
 			  <li>Detecto errores en las peritajes oficiales y redacto la impugnación.</li>
 			  <li>Calculo liquidaciones finales complejas con celeridad.</li>			  
 			</ol>
-		 </div>
-	</div>
-
-	<div class="container">
-		<div class="card">
+			
 			<h3><i class="fas fa-balance-scale"></i> 
 				No dejes que los números sean un obstáculo. ¡Sumá una aliada contable a tu equipo!
 			</h3>
-		</div>
+		 </div>
 	</div>
 	
 	<div class="container">
@@ -153,7 +158,7 @@
             <p>Liquidaciones finales, multas y análisis de deficiencias en liquidaciones de los últimos 2 años.</p>			
             <img src="Imagenes/Calculos laborales.png" alt="Cálculos Laborales" width="100%" />				
         </div>
-        <div class="card">        
+        <div class="card">
             <h3><i class="fas fa-pen"></i> Asesoramiento</h3>
             <p>Respuesta técnica inmediata para sus urgencias contables y puntos periciales críticos.</p>
             <img src="Imagenes/explicando.png" alt="Asesoramiento" width="100%" />				
